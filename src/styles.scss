@@ -1,0 +1,52 @@
+// @import "../node_modules/bootstrap/scss/bootstrap"
+fieldset {
+  legend {
+    color: #1d8696;
+    float: none;
+    width: auto;
+    padding: 5px;
+  }
+  padding: 20px;
+  border: solid 1px #1d8696;
+  background-color: aliceblue;
+  border-radius: 8px;
+
+  .mat-form-field {
+    padding: 10px 0;
+  }
+
+  .style-label {
+    background-color: #6d87a42b;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+  }
+
+  .atack-color {
+    color: red;
+  }
+
+  .defense-color {
+    color: blue;
+  }
+
+  .c-pointer {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .responsive {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .text-align-left {
+    text-align: left !important;
+  }
+
+  .w-25px {
+    width: 25% !important;
+    min-width: 330px;
+  }
+}
