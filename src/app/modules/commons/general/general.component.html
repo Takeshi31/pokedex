@@ -1,0 +1,26 @@
+<div class="d-inline-block p-3 w-100">
+  <fieldset class="text-align-left text-center">
+    <legend>General</legend>
+
+    <div *ngIf="generalInfo" class="col-sm-12 col-md-12 d-inline-block responsive">
+      <div class="col-sm-12 col-md-12 d-inline-block responsive">
+        <div class="col-12 d-inline-block style-label mb-2 responsive">
+          <div class="col-6 d-inline-block style-content">Height</div>
+          <div class="col-6 d-inline-block text-center">{{generalInfo.height}}</div>
+        </div>
+        <div class="col-12 d-inline-block style-label mb-2 responsive">
+          <div class="col-6 d-inline-block style-content">Weight</div>
+          <div class="col-6 d-inline-block text-center">{{generalInfo.weight}}</div>
+        </div>
+        <div class="col-12 d-inline-block style-label mb-2 responsive">
+          <div class="col-6 d-inline-block style-content">Orden</div>
+          <div class="col-6 d-inline-block text-center">{{generalInfo.order}}</div> 
+        </div>
+        <div class="col-12 d-inline-block style-label mb-2 responsive">
+          <div class="col-6 d-inline-block style-content">Base Exp.</div>
+          <div class="col-6 d-inline-block text-center">{{generalInfo.base_experience}}</div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>

@@ -1,0 +1,32 @@
+.header {
+  height: 48px;
+  background-color: #8de7e3;
+}
+
+.btn-secondary {
+	color: #1d8696;
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 0%;
+  padding: auto;
+  margin-right: 10px;
+	&:active {
+		color: #1d8696;
+		background-color: transparent;
+		border-color: transparent;
+		border-radius: 0%;
+	}
+}
+
+.btn-search {
+  color: #1d8696;
+  border-color: #1d8696;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+  &:active {
+    color: white;
+    background-color: #1d8696;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
+}
