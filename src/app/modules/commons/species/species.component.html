@@ -1,0 +1,53 @@
+<div *ngIf="specie" class="d-inline-block text-center p-3 w-100">
+  <fieldset>
+    <legend>{{specie.name | uppercase}}</legend>
+
+    <div class="d-block text-center mb-2">
+      <img [src]="urlImage" alt="" style="height:200px">
+    </div>
+  </fieldset>
+</div>
+<div *ngIf="specie" class="d-inline-block p-3 w-100">
+  <fieldset class="text-align-left text-center">
+    <legend>Specie</legend>
+
+    <div class="col-sm-12 col-md-12 d-inline-block responsive">
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Base Happiness</div>
+        <div class="col-6 d-inline-block text-center">{{specie.base_happiness}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Capture Rate</div>
+        <div class="col-6 d-inline-block text-center">{{specie.capture_rate}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Color</div>
+        <div class="col-6 d-inline-block text-center">{{specie.color.name}}</div> 
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Gender Rate</div>
+        <div class="col-6 d-inline-block text-center">{{specie.gender_rate}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Generation</div>
+        <div class="col-6 d-inline-block text-center">{{specie.generation.name}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Growth Rate</div>
+        <div class="col-6 d-inline-block text-center">{{specie.growth_rate.name}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Habitat</div>
+        <div class="col-6 d-inline-block text-center">{{specie.habitat.name}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Shape</div>
+        <div class="col-6 d-inline-block text-center">{{specie.shape.name}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Gender Rate</div>
+        <div class="col-6 d-inline-block text-center">{{specie.gender_rate}}</div>
+      </div>
+    </div>
+  </fieldset>
+</div>
