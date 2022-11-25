@@ -1,0 +1,10 @@
+<div class="row flex-wrap-initial">
+  <div *ngFor="let pokemonId of pokemonIds" class="w-25px d-inline-block">
+    <app-species
+      [pokemonId]="pokemonId">
+    </app-species>
+    <app-general
+      [pokemonId]="pokemonId">
+    </app-general>
+  </div>
+</div>
