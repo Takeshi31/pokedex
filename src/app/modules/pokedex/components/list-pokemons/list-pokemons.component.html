@@ -1,0 +1,11 @@
+<div class="w-100">
+  <div class="col-sm-12 col-md-6 d-inline-block" *ngFor="let pokemonData of listPokemonsInfo">
+    <app-pokemon-card
+      [pokemonData]="pokemonData"
+      (comparePokemonId)="addOrRemovePokemonIds($event)">
+    </app-pokemon-card>
+  </div>
+</div>
+<div *ngIf="pokemonsForCompare.length > 1" class="fixed-bar d-block text-center">
+  <button class="btn btn-outline-primary" (click)="comparePokemons()">Compare</button>
+</div>

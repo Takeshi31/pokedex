@@ -1,0 +1,30 @@
+<div class="d-inline-block p-3 w-100">
+  <fieldset class="position-relative">
+    <legend>{{pokemonData?.name}} #{{pokemonData.id}}</legend>
+
+    <div class="d-block text-center mb-2 c-pointer" (click)="goToDetails()">
+      <img [src]="pokemonData.sprites.other.dream_world.front_default" alt="" style="height:200px">
+    </div>
+    <button class="btn btn-outline-primary button-align rounded" (click)="compare()" title="compare">
+      <img [src]="buttonIcon">
+    </button>
+    <div class="col-sm-12 col-md-12 d-inline-block responsive">
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Height</div>
+        <div class="col-6 d-inline-block text-center">{{pokemonData.height}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Weight</div>
+        <div class="col-6 d-inline-block text-center">{{pokemonData.weight}}</div>
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Orden</div>
+        <div class="col-6 d-inline-block text-center">{{pokemonData.order}}</div> 
+      </div>
+      <div class="col-12 d-inline-block style-label mb-2 responsive">
+        <div class="col-6 d-inline-block style-content">Base Exp.</div>
+        <div class="col-6 d-inline-block text-center">{{pokemonData.base_experience}}</div>
+      </div>
+    </div>
+  </fieldset>
+</div>
